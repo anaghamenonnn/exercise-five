@@ -23,7 +23,7 @@ const indexRoute = require("./routes/index.js");
 const createPostRoute = require("./routes/createPost.js");
 const singlePostRoute = require("./routes/singlePost.js");
 
-
+app.use(express.static("public"));
 
 app.use("/", indexRoute)
 app.use ("/create", createPostRoute)
